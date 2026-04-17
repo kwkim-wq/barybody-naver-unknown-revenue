@@ -120,6 +120,34 @@
     font-size: 13px; font-weight: 700; color: #1a1a2e;
   }
 
+  /* 비교 기준점 */
+  .baseline-banner {
+    background: linear-gradient(135deg, #0d0d1a 0%, #1a1a2e 100%);
+    border-radius: 12px;
+    padding: 22px 24px;
+    display: flex; gap: 16px; align-items: flex-start;
+    margin-top: 12px;
+  }
+  .baseline-icon {
+    font-size: 26px; flex-shrink: 0; margin-top: 2px;
+  }
+  .baseline-body .b-title {
+    font-size: 15px; font-weight: 800; color: #fff; margin-bottom: 6px;
+  }
+  .baseline-body .b-desc {
+    font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.7;
+  }
+  .baseline-examples {
+    display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;
+  }
+  .baseline-ex {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 12px; color: rgba(255,255,255,0.7); font-weight: 600;
+  }
+
   /* 비정기 분석 — 생각 흐름 */
   .thought-flow { display: flex; flex-direction: column; gap: 0; }
   .thought-row {
@@ -244,6 +272,33 @@
               <span class="item-chip">구매 (온사이트)</span>
               <span class="item-chip">매출</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 비교 기준점 -->
+  <div class="section">
+    <div class="section-title">비교 · 기준점</div>
+    <div class="card">
+      <div class="card-title">분석은 항상 비교에서 시작한다</div>
+      <div class="baseline-banner">
+        <div class="baseline-icon">⚖️</div>
+        <div class="baseline-body">
+          <div class="b-title">숫자 하나만으로는 아무것도 알 수 없다</div>
+          <div class="b-desc">
+            매출이 1,000만 원이다 — 좋은 건지 나쁜 건지 모른다.<br>
+            지난주보다 30% 올랐다 — 그제야 "좋다"는 판단이 가능해진다.<br><br>
+            어떤 분석을 하든 <strong style="color:#fff;">기준점(비교 대상)을 먼저 정해야</strong> 분석이 의미를 갖는다.
+          </div>
+          <div class="baseline-examples">
+            <span class="baseline-ex">전주 대비</span>
+            <span class="baseline-ex">전월 대비</span>
+            <span class="baseline-ex">전년 동기 대비</span>
+            <span class="baseline-ex">목표 대비</span>
+            <span class="baseline-ex">채널 평균 대비</span>
+            <span class="baseline-ex">이벤트 전/후</span>
           </div>
         </div>
       </div>
